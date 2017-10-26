@@ -8,11 +8,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    public EditText Num1 ;
+    public EditText Denum1;
+    public EditText Num2 ;
+    public EditText Denum2 ;
+    public TextView resultNum;
+    public TextView resultDeNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        Num1 = (EditText) findViewById(R.id.num1);
+        Denum1 = (EditText) findViewById(R.id.denum1);
+        Num2 = (EditText) findViewById(R.id.num2);
+        Denum2 = (EditText) findViewById(R.id.denum2);
+        resultNum = (TextView)findViewById(R.id.numResult);
+        resultDeNum = (TextView)findViewById(R.id.denumResult);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button ButtonPl=(Button)findViewById(R.id.plusButton);
@@ -21,12 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
+
                         Drob dr1 = new Drob(1,1);
                         Drob dr2 = new Drob(1,1);
                         try{
@@ -54,12 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
                         Drob dr1 = new Drob(1,1);
                         Drob dr2 = new Drob(1,1);
                         try{
@@ -87,12 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
                         Drob dr1 = new Drob(1,1);
                         Drob dr2 = new Drob(1,1);
                         try{
@@ -119,12 +112,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
                         Drob dr1 = new Drob(1,1);
                         Drob dr2 = new Drob(1,1);
                         try{
@@ -152,12 +139,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
                         Num1.setText(" ");
                         Num2.setText(resultNum.getText());
                         Denum1.setText(" ");
@@ -174,12 +155,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        EditText Num1 = (EditText) findViewById(R.id.num1);
-                        EditText Denum1 = (EditText) findViewById(R.id.denum1);
-                        EditText Num2 = (EditText) findViewById(R.id.num2);
-                        EditText Denum2 = (EditText) findViewById(R.id.denum2);
-                        TextView resultNum = (TextView)findViewById(R.id.numResult);
-                        TextView resultDeNum = (TextView)findViewById(R.id.denumResult);
                         Num1.setText(" ");
                         Num2.setText(" ");
                         Denum1.setText(" ");
